@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Барбершоп «Латунь» — мужские стрижки и бритьё в центре Минска</title>
+  <meta name="description" content="Барбершоп «Латунь» на Революционной, 17: мужские стрижки, fade, оформление бороды и бритьё. 6 мастеров, 4,8 на Яндекс Картах. Пн–Пт 10:00–21:00, Сб–Вс 10:00–20:00.">
+  <meta name="theme-color" content="#121212">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Барбершоп «Латунь»">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Барбершоп «Латунь» — Минск">
+  <meta property="og:description" content="Мужские стрижки и бритьё в центре Минска с 2019 года. Запишитесь — и выпейте кофе, пока ждёте.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1200&h=630&fit=crop&q=80">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Интерьер барбершопа «Латунь»">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- класс .js включает анимации появления только при работающем JS;
+       если script.js не загрузился за 3 секунды — убираем класс, чтобы контент не остался невидимым -->
+  <script>
+    document.documentElement.classList.add('js');
+    setTimeout(function () { if (!window.latunReady) document.documentElement.classList.remove('js'); }, 3000);
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ===== Шапка ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Латунь — на главную">ЛАТУНЬ</a>
+
+      <nav class="nav" id="nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a href="#services" class="nav__link">Услуги</a></li>
+          <li><a href="#masters" class="nav__link">Мастера</a></li>
+          <li><a href="#gallery" class="nav__link">Галерея</a></li>
+          <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+          <li><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+        <a href="#booking" class="btn btn--accent nav__cta">Записаться</a>
+      </nav>
+
+      <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="top">
+      <img class="hero__bg"
+           src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1920&q=75&fit=crop"
+           srcset="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&q=70&fit=crop 800w,
+                   https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1280&q=70&fit=crop 1280w,
+                   https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1920&q=75&fit=crop 1920w"
+           sizes="100vw"
+           alt="Интерьер барбершопа: кожаные кресла, кирпичные стены, тёплый свет ламп"
+           fetchpriority="high">
+      <div class="container hero__content">
+        <h1 class="hero__title">Барбершоп <span>Латунь</span></h1>
+        <p class="hero__subtitle">Мужские стрижки и бритьё в центре Минска с 2019 года</p>
+        <div class="hero__actions">
+          <a href="#booking" class="btn btn--accent btn--lg">Записаться онлайн</a>
+          <a href="#services" class="btn btn--outline btn--lg">Смотреть цены</a>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="facts">
+          <li class="facts__item"><strong>6</strong><span>мастеров</span></li>
+          <li class="facts__item"><strong>4,8</strong><span>на Яндекс Картах · 214 отзывов</span></li>
+          <li class="facts__item"><strong>с 2019</strong><span>года на Революционной</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Услуги и цены ===== -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Услуги и цены</p>
+          <h2 class="section__title">Что мы делаем</h2>
+          <p class="section__lead">Мытьё головы и укладка уже входят в любую стрижку. Цены действуют с 1 сентября 2026.</p>
+        </header>
+
+        <div class="services">
+          <h3 class="services__cat">Стрижки</h3>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="12" cy="36" r="6"/><circle cx="36" cy="36" r="6"/><path d="M16 32 36 6M32 32 12 6"/></svg>
+            <h4 class="service__name">Стрижка + укладка</h4>
+            <p class="service__desc">Ножницы и машинка, мытьё, укладка. Подскажем, чем укладывать дома.</p>
+            <div class="service__meta"><span class="service__time">60 мин</span><span class="service__price">42 BYN</span></div>
+          </article>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="14" width="20" height="30" rx="4"/><path d="M14 8h20v6H14zM18 4v4M24 4v4M30 4v4M20 24h8"/></svg>
+            <h4 class="service__name">Fade / skin fade</h4>
+            <p class="service__desc">Плавный переход, при желании до кожи. Верх — ножницами или машинкой.</p>
+            <div class="service__meta"><span class="service__time">60 мин</span><span class="service__price">46 BYN</span></div>
+          </article>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="14" width="20" height="30" rx="4"/><path d="M14 8h20v6H14zM20 24h8"/></svg>
+            <h4 class="service__name">Стрижка машинкой</h4>
+            <p class="service__desc">Одна или две насадки, окантовка. Без укладки.</p>
+            <div class="service__meta"><span class="service__time">40 мин</span><span class="service__price">27 BYN</span></div>
+          </article>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4c6 10 12 16 12 24a12 12 0 0 1-24 0c0-8 6-14 12-24z"/><path d="M18 30a6 6 0 0 0 6 6"/></svg>
+            <h4 class="service__name">Камуфляж седины</h4>
+            <p class="service__desc">Тонирование волос на голове. Цена зависит от длины.</p>
+            <div class="service__meta"><span class="service__time">40 мин</span><span class="service__price">от 36 BYN</span></div>
+          </article>
+
+          <h3 class="services__cat">Борода и бритьё</h3>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 14c0 16 6 28 16 28s16-12 16-28"/><path d="M16 26c2 3 5 4 8 4s6-1 8-4M18 36l6 6 6-6"/></svg>
+            <h4 class="service__name">Оформление бороды</h4>
+            <p class="service__desc">Форма, контур бритвой, распаривание и масло.</p>
+            <div class="service__meta"><span class="service__time">40 мин</span><span class="service__price">34 BYN</span></div>
+          </article>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="16" r="10"/><path d="M14 18c0 14 4 26 10 26s10-12 10-26"/><path d="M20 32h8"/></svg>
+            <h4 class="service__name">Стрижка + борода</h4>
+            <p class="service__desc">Самое популярное у нас. Выходит дешевле, чем по отдельности.</p>
+            <div class="service__meta"><span class="service__time">90 мин</span><span class="service__price">71 BYN</span></div>
+          </article>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30h26l10-8H16z"/><path d="M6 30v6h10l4-6"/></svg>
+            <h4 class="service__name">Бритьё опасной бритвой</h4>
+            <p class="service__desc">Горячие полотенца, пена, бритва, бальзам после.</p>
+            <div class="service__meta"><span class="service__time">40 мин</span><span class="service__price">38 BYN</span></div>
+          </article>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4c6 10 12 16 12 24a12 12 0 0 1-24 0c0-8 6-14 12-24z"/><path d="M18 30a6 6 0 0 0 6 6"/></svg>
+            <h4 class="service__name">Тонирование бороды <span class="service__tag">новое</span></h4>
+            <p class="service__desc">Убирает рыжину и седину в бороде. Держится 3–4 недели.</p>
+            <div class="service__meta"><span class="service__time">40 мин</span><span class="service__price">29 BYN</span></div>
+          </article>
+
+          <h3 class="services__cat">Детям и дополнительно</h3>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="22" r="12"/><path d="M19 20h.01M29 20h.01M19 27c3 3 7 3 10 0M12 44c2-6 7-8 12-8s10 2 12 8"/></svg>
+            <h4 class="service__name">Детская стрижка</h4>
+            <p class="service__desc">До 12 лет. Есть планшет с мультиками, если сидеть скучно.</p>
+            <div class="service__meta"><span class="service__time">40 мин</span><span class="service__price">33 BYN</span></div>
+          </article>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="17" cy="14" r="7"/><circle cx="34" cy="22" r="5"/><path d="M5 44c1-10 6-15 12-15s11 5 12 15M27 44c1-7 4-10 7-10s6 3 7 10"/></svg>
+            <h4 class="service__name">Отец + сын</h4>
+            <p class="service__desc">Две стрижки подряд у одного мастера. Цена зависит от длины у папы.</p>
+            <div class="service__meta"><span class="service__time">90 мин</span><span class="service__price">от 69 BYN</span></div>
+          </article>
+
+          <article class="card service reveal">
+            <svg class="service__icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M18 6c-6 0-10 6-10 14 0 6 3 9 6 12s4 6 4 10h6"/><path d="M30 18c4 2 6 6 6 10M34 14c6 3 9 8 9 14"/></svg>
+            <h4 class="service__name">Воск (нос/уши)</h4>
+            <p class="service__desc">Быстро и почти не больно. Можно добавить к любой услуге.</p>
+            <div class="service__meta"><span class="service__time">15 мин</span><span class="service__price">12 BYN</span></div>
+          </article>
+
+          <a href="#booking" class="card service service--cta reveal">
+            <h4 class="service__name">Не знаете, что выбрать?</h4>
+            <p class="service__desc">Записывайтесь на стрижку — на месте мастер посмотрит и посоветует.</p>
+            <span class="service__link">Записаться &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== О нас ===== -->
+    <section class="section section--alt" id="about">
+      <div class="container about">
+        <div class="about__media reveal">
+          <img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?w=900&h=1100&fit=crop&q=75"
+               alt="Винтажное кожаное барберское кресло с латунной фурнитурой"
+               width="900" height="1100" loading="lazy">
+        </div>
+        <div class="about__text reveal">
+          <p class="eyebrow">О нас</p>
+          <h2 class="section__title">Пара слов от нас</h2>
+          <p>Открылись осенью 2019-го: два кресла, Артём и я. Первые полгода стригли в основном друзей и соседей по двору. Сейчас нас шестеро, а кофемашину меняли уже два раза.</p>
+          <p>Стрижём мужчин и мальчишек. Без записи примем, если есть окно, но в пятницу и на выходных лучше записаться за пару дней. Музыку ставит тот, кто сегодня на смене, — чаще всего старый рок.</p>
+          <p class="about__sign">— Игорь Н., владелец</p>
+          <ul class="perks">
+            <li class="perks__item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h13v5a6 6 0 0 1-6 6H10a6 6 0 0 1-6-6zM17 11h2a2 2 0 0 1 0 4h-2M8 3v3M12 3v3"/></svg>
+              <span><strong>Кофе и чай бесплатно</strong> — пока ждёте или пока стрижётесь</span>
+            </li>
+            <li class="perks__item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17h14M6 17l1.5-6h9L18 17M8 17v2M16 17v2M9 14h.01M15 14h.01"/></svg>
+              <span><strong>Бесплатная парковка во дворе</strong> — заезд через арку со стороны Революционной</span>
+            </li>
+            <li class="perks__item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 15h3"/></svg>
+              <span><strong>Принимаем карты и Apple/Google Pay</strong> — наличные тоже</span>
+            </li>
+            <li class="perks__item">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="1"/><path d="M3 13h18M12 9v12M12 9c-1-4-6-5-6-2s6 2 6 2zM12 9c1-4 6-5 6-2s-6 2-6 2z"/></svg>
+              <span><strong>Подарочные сертификаты от 50 BYN</strong> — продаём на месте, срок полгода</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Мастера ===== -->
+    <section class="section" id="masters">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Команда</p>
+          <h2 class="section__title">Наши мастера</h2>
+        </header>
+
+        <div class="masters">
+          <article class="card master reveal">
+            <div class="master__photo">
+              <img src="https://images.unsplash.com/photo-1582771498000-8ad44e6c84db?w=600&h=720&fit=crop&q=75"
+                   alt="Барбер Игорь Н. за работой" width="600" height="720" loading="lazy">
+              <span class="master__badge">Владелец</span>
+            </div>
+            <div class="master__body">
+              <h3 class="master__name">Игорь Н.</h3>
+              <p class="master__exp">11 лет опыта</p>
+              <p class="master__spec">Берёт сложные случаи: длинные волосы, исправить неудачную стрижку из другого места.</p>
+            </div>
+          </article>
+
+          <article class="card master reveal">
+            <div class="master__photo">
+              <img src="https://images.unsplash.com/photo-1553521041-d168abd31de3?w=600&h=720&fit=crop&q=75"
+                   alt="Барбер Артём К. с ножницами" width="600" height="720" loading="lazy">
+            </div>
+            <div class="master__body">
+              <h3 class="master__name">Артём К.</h3>
+              <p class="master__exp">7 лет опыта</p>
+              <p class="master__spec">Работает с первого дня. Классика и бритьё, а заодно поговорит про футбол.</p>
+            </div>
+          </article>
+
+          <article class="card master reveal">
+            <div class="master__photo">
+              <img src="https://images.unsplash.com/photo-1598524374912-6b0b0bab43dd?w=600&h=720&fit=crop&q=75"
+                   alt="Барбер Влад С. делает укладку" width="600" height="720" loading="lazy">
+            </div>
+            <div class="master__body">
+              <h3 class="master__name">Влад С.</h3>
+              <p class="master__exp">5 лет опыта</p>
+              <p class="master__spec">Фейды — это к нему. Переход до кожи без единой ступеньки.</p>
+            </div>
+          </article>
+
+          <article class="card master reveal">
+            <div class="master__photo">
+              <img src="https://images.unsplash.com/photo-1605497787865-e6d4762b386f?w=600&h=720&fit=crop&q=75"
+                   alt="Барбер Сергей Б. за работой" width="600" height="720" loading="lazy">
+            </div>
+            <div class="master__body">
+              <h3 class="master__name">Сергей Б.</h3>
+              <p class="master__exp">9 лет опыта</p>
+              <p class="master__spec">Бороды и тонирование. Сам носит бороду лет десять, так что понимает.</p>
+            </div>
+          </article>
+
+          <article class="card master reveal">
+            <div class="master__photo">
+              <img src="https://images.unsplash.com/photo-1703792684940-a05aa0f1188f?w=600&h=720&fit=crop&q=75"
+                   alt="Барбер Павел Л. в зале барбершопа" width="600" height="720" loading="lazy">
+              <span class="master__badge master__badge--muted">Ближайшее окно — завтра</span>
+            </div>
+            <div class="master__body">
+              <h3 class="master__name">Павел Л.</h3>
+              <p class="master__exp">4 года опыта</p>
+              <p class="master__spec">Детские стрижки и «отец + сын». Дети у него сидят спокойно, проверено.</p>
+            </div>
+          </article>
+
+          <article class="card master reveal">
+            <div class="master__photo">
+              <img src="https://images.unsplash.com/photo-1640301133857-c4bc5789c1bb?w=600&h=720&fit=crop&q=75"
+                   alt="Барбер Дима Ж. стрижёт клиента" width="600" height="720" loading="lazy">
+            </div>
+            <div class="master__body">
+              <h3 class="master__name">Дима Ж.</h3>
+              <p class="master__exp">2 года опыта</p>
+              <p class="master__spec">Самый молодой у нас. Не торопится и хорошо стрижёт кудрявых.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Галерея ===== -->
+    <section class="section section--alt" id="gallery">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Галерея</p>
+          <h2 class="section__title">Наши работы</h2>
+        </header>
+
+        <ul class="gallery" id="galleryList">
+          <li><button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=1600&q=80" aria-label="Открыть фото: фейд с прорисованным контуром">
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=600&h=600&fit=crop&q=70" alt="Фейд с прорисованным контуром" loading="lazy" width="600" height="600"></button></li>
+          <li><button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=1600&q=80" aria-label="Открыть фото: текстурная стрижка">
+            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&h=600&fit=crop&q=70" alt="Текстурная стрижка" loading="lazy" width="600" height="600"></button></li>
+          <li><button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?w=1600&q=80" aria-label="Открыть фото: андеркат с бородой">
+            <img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?w=600&h=600&fit=crop&q=70" alt="Андеркат с бородой" loading="lazy" width="600" height="600"></button></li>
+          <li><button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=1600&q=80" aria-label="Открыть фото: стрижка кудрявых волос">
+            <img src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?w=600&h=600&fit=crop&q=70" alt="Стрижка кудрявых волос" loading="lazy" width="600" height="600"></button></li>
+          <li><button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=1600&q=80" aria-label="Открыть фото: моделирование бороды">
+            <img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?w=600&h=600&fit=crop&q=70" alt="Моделирование бороды ножницами" loading="lazy" width="600" height="600"></button></li>
+          <li><button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=1600&q=80" aria-label="Открыть фото: процесс стрижки">
+            <img src="https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=600&h=600&fit=crop&q=70" alt="Барбер за работой" loading="lazy" width="600" height="600"></button></li>
+          <li><button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=1600&q=80" aria-label="Открыть фото: королевское бритьё">
+            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&h=600&fit=crop&q=70" alt="Королевское бритьё опасной бритвой" loading="lazy" width="600" height="600"></button></li>
+          <li><button class="gallery__item" type="button" data-full="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=1600&q=80" aria-label="Открыть фото: инструменты барбера">
+            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&h=600&fit=crop&q=70" alt="Машинки, ножницы и косметика на рабочем месте" loading="lazy" width="600" height="600"></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Отзывы ===== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Отзывы</p>
+          <h2 class="section__title">Что говорят гости</h2>
+          <p class="section__lead">4,8 на Яндекс Картах · 214 отзывов. Здесь несколько последних, без правок.</p>
+        </header>
+
+        <div class="slider reveal" id="slider" aria-roledescription="карусель" aria-label="Отзывы клиентов">
+          <div class="slider__viewport">
+            <div class="slider__track" id="sliderTrack">
+              <figure class="review" aria-roledescription="слайд" aria-label="1 из 8">
+                <div class="review__stars" role="img" aria-label="Оценка 5 из 5">★★★★★</div>
+                <blockquote class="review__text">Хожу к Артёму третий год. Стрижка каждый раз одинаковая — в хорошем смысле, ничего объяснять не надо. Кофе нормальный, не из автомата.</blockquote>
+                <figcaption class="review__author">Павел <time datetime="2026-10-24">24 октября 2026</time></figcaption>
+              </figure>
+              <figure class="review" aria-roledescription="слайд" aria-label="2 из 8">
+                <div class="review__stars" role="img" aria-label="Оценка 5 из 5">★★★★★</div>
+                <blockquote class="review__text">лучший фейд в городе, влад красавчик</blockquote>
+                <figcaption class="review__author">Никита Р. <time datetime="2026-10-18">18 октября 2026</time></figcaption>
+              </figure>
+              <figure class="review" aria-roledescription="слайд" aria-label="3 из 8">
+                <div class="review__stars" role="img" aria-label="Оценка 4 из 5">★★★★<span class="review__star-off">★</span></div>
+                <blockquote class="review__text">Был записан на 18:00, сел в кресло в 18:25 — мастер задержался с предыдущим клиентом. Извинились, налили кофе. Долго ждал, но стрижка огонь, Влад своё дело знает. Ставлю 4, в следующий раз надеюсь без ожидания.</blockquote>
+                <figcaption class="review__author">Алексей М. <time datetime="2026-10-09">9 октября 2026</time></figcaption>
+                <div class="review__reply">
+                  <p class="review__reply-title">Ответ барбершопа</p>
+                  <p>Алексей, спасибо, что написали. В тот вечер перед вами была сложная стрижка, и мы не уложились. Теперь на fade ставим запас 15 минут. В следующий раз кофе за наш счёт — хотя он и так бесплатный 🙂</p>
+                </div>
+              </figure>
+              <figure class="review" aria-roledescription="слайд" aria-label="4 из 8">
+                <div class="review__stars" role="img" aria-label="Оценка 5 из 5">★★★★★</div>
+                <blockquote class="review__text">Ходили с сыном на «отец + сын» к Павлу 👍 Малой сидел спокойно, смотрел мультики, я тоже постригся. Удобно что парковка прямо во дворе</blockquote>
+                <figcaption class="review__author">Андрей Л. <time datetime="2026-09-27">27 сентября 2026</time></figcaption>
+              </figure>
+              <figure class="review" aria-roledescription="слайд" aria-label="5 из 8">
+                <div class="review__stars" role="img" aria-label="Оценка 5 из 5">★★★★★</div>
+                <blockquote class="review__text">Нормально. Быстро, аккуратно, без лишних разговоров.</blockquote>
+                <figcaption class="review__author">Сергей <time datetime="2026-09-21">21 сентября 2026</time></figcaption>
+              </figure>
+              <figure class="review" aria-roledescription="слайд" aria-label="6 из 8">
+                <div class="review__stars" role="img" aria-label="Оценка 5 из 5">★★★★★</div>
+                <blockquote class="review__text">Сделал тонирование бороды у Сергея. Боялся, что будет как гуталин, но нет — седина просто стала мягче. Жена не заметила, пока сам не сказал 😄</blockquote>
+                <figcaption class="review__author">Владимир Т. <time datetime="2026-09-12">12 сентября 2026</time></figcaption>
+              </figure>
+              <figure class="review" aria-roledescription="слайд" aria-label="7 из 8">
+                <div class="review__stars" role="img" aria-label="Оценка 4 из 5">★★★★<span class="review__star-off">★</span></div>
+                <blockquote class="review__text">Стригусь второй раз. Музыка хорошая, атмосфера спокойная. Дороже, чем у меня на районе, но и делают аккуратнее. Минус звезда за выходные — свободных окон почти нет, записывался за неделю.</blockquote>
+                <figcaption class="review__author">Егор <time datetime="2026-08-30">30 августа 2026</time></figcaption>
+              </figure>
+              <figure class="review" aria-roledescription="слайд" aria-label="8 из 8">
+                <div class="review__stars" role="img" aria-label="Оценка 5 из 5">★★★★★</div>
+                <blockquote class="review__text">Дима молодой, но очень аккуратный. Наконец-то кто-то нормально постриг кудрявые волосы, а не «машинкой по бокам, сверху как получится». Приду ещё 🔥</blockquote>
+                <figcaption class="review__author">Максим К. <time datetime="2026-08-16">16 августа 2026</time></figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="slider__controls">
+            <button class="icon-btn" type="button" id="sliderPrev" aria-label="Предыдущий отзыв">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            </button>
+            <div class="slider__dots" id="sliderDots"></div>
+            <button class="icon-btn" type="button" id="sliderNext" aria-label="Следующий отзыв">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Запись ===== -->
+    <section class="section booking" id="booking">
+      <div class="container booking__inner">
+        <div class="booking__text reveal">
+          <p class="eyebrow">Онлайн-запись</p>
+          <h2 class="booking__title">Запишитесь — и выпейте кофе, пока ждёте</h2>
+          <p>Оставьте имя и телефон — администратор перезвонит в течение 15 минут и подберёт удобное время.</p>
+          <p class="booking__promo">−15% на первую стрижку по промокоду <strong>ПЕРВЫЙ</strong> — назовите его администратору.</p>
+        </div>
+
+        <div class="booking__box reveal">
+          <form class="form" id="bookingForm" novalidate>
+            <div class="form__field">
+              <label for="name">Имя</label>
+              <input id="name" name="name" type="text" autocomplete="given-name" placeholder="Как к вам обращаться" required aria-describedby="nameError">
+              <p class="form__error" id="nameError" aria-live="polite"></p>
+            </div>
+            <div class="form__field">
+              <label for="phone">Телефон</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+375 (__) ___-__-__" required aria-describedby="phoneError">
+              <p class="form__error" id="phoneError" aria-live="polite"></p>
+            </div>
+            <div class="form__field">
+              <label for="service">Услуга</label>
+              <select id="service" name="service">
+                <option>Стрижка + укладка — 42 BYN</option>
+                <option>Fade / skin fade — 46 BYN</option>
+                <option>Стрижка машинкой — 27 BYN</option>
+                <option>Детская стрижка — 33 BYN</option>
+                <option>Отец + сын — от 69 BYN</option>
+                <option>Оформление бороды — 34 BYN</option>
+                <option>Стрижка + борода — 71 BYN</option>
+                <option>Бритьё опасной бритвой — 38 BYN</option>
+                <option>Тонирование бороды — 29 BYN</option>
+                <option>Камуфляж седины — от 36 BYN</option>
+                <option>Воск (нос/уши) — 12 BYN</option>
+              </select>
+            </div>
+            <button class="btn btn--accent btn--lg form__submit" type="submit">Записаться</button>
+            <p class="form__note">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html" class="link">политикой конфиденциальности</a>.</p>
+          </form>
+
+          <div class="form-success" id="formSuccess" hidden tabindex="-1">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21"/><path d="M15 25l6 6 12-13"/></svg>
+            <h3>Спасибо, <span id="successName"></span>!</h3>
+            <p>Заявка принята. Мы перезвоним в течение 15 минут, чтобы подтвердить время. Кофе уже ждёт.</p>
+            <p class="form-success__demo">Демо-режим: данные никуда не отправляются</p>
+            <button class="btn btn--outline form-success__again" type="button" id="bookAgain">Записаться ещё раз</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Контакты ===== -->
+    <section class="section section--alt" id="contacts">
+      <div class="container contacts">
+        <div class="contacts__info reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2 class="section__title">Как нас найти</h2>
+          <dl class="contacts__list">
+            <div><dt>Адрес</dt><dd>г. Минск, ул. Революционная, 17, вход со двора</dd></div>
+            <div><dt>Часы работы</dt><dd>Пн–Пт 10:00–21:00, Сб–Вс 10:00–20:00</dd></div>
+            <div><dt>Телефон</dt><dd><a class="link contacts__phone" href="tel:+375293184762">+375 (29) 318-47-62</a></dd></div>
+            <div><dt>Instagram</dt><dd><a class="link" href="https://instagram.com/latun.barber" target="_blank" rel="noopener noreferrer">@latun.barber</a></dd></div>
+            <div><dt>Парковка и оплата</dt><dd>Бесплатная парковка во дворе. Карты, Apple/Google Pay, наличные</dd></div>
+          </dl>
+          <div class="socials">
+            <a class="social" href="https://t.me/latun_barber" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-8c.4-.3-.1-.5-.6-.2L6.7 12.8 2 11.4c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg>
+            </a>
+            <a class="social" href="viber://chat?number=%2B375293184762" aria-label="Viber">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c5 0 8.5 2.4 8.5 8.3 0 5.6-3.6 7.9-8.5 7.9-.8 0-1.6 0-2.3-.2L6 21v-3.4c-1.8-1.3-2.5-3.7-2.5-6.8C3.5 4.9 7 2.5 12 2.5z"/><path d="M9 8c.5 2.8 2.2 5 5.5 6.5M13 6.5a4 4 0 0 1 4 4M13 9a1.6 1.6 0 0 1 1.5 1.5"/></svg>
+            </a>
+            <a class="social" href="https://instagram.com/latun.barber" target="_blank" rel="noopener noreferrer" aria-label="Instagram @latun.barber">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contacts__map reveal">
+          <iframe title="Карта: Барбершоп Латунь, ул. Революционная, 17, Минск"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=27.5490%2C53.9045%2C27.5630%2C53.9105&amp;layer=mapnik&amp;marker=53.9075%2C27.5560"
+                  loading="lazy"></iframe>
+          <a class="link contacts__map-link" href="https://www.openstreetmap.org/?mlat=53.9075&amp;mlon=27.5560#map=17/53.9075/27.5560" target="_blank" rel="noopener noreferrer">Открыть карту в новой вкладке</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Футер ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo" aria-label="Латунь — наверх">ЛАТУНЬ</a>
+      <nav aria-label="Навигация в подвале">
+        <ul class="footer__nav">
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#masters">Мастера</a></li>
+          <li><a href="#booking">Запись</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="socials socials--sm">
+        <a class="social" href="https://t.me/latun_barber" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-8c.4-.3-.1-.5-.6-.2L6.7 12.8 2 11.4c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg>
+        </a>
+        <a class="social" href="viber://chat?number=%2B375293184762" aria-label="Viber">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c5 0 8.5 2.4 8.5 8.3 0 5.6-3.6 7.9-8.5 7.9-.8 0-1.6 0-2.3-.2L6 21v-3.4c-1.8-1.3-2.5-3.7-2.5-6.8C3.5 4.9 7 2.5 12 2.5z"/><path d="M9 8c.5 2.8 2.2 5 5.5 6.5M13 6.5a4 4 0 0 1 4 4M13 9a1.6 1.6 0 0 1 1.5 1.5"/></svg>
+        </a>
+        <a class="social" href="https://instagram.com/latun.barber" target="_blank" rel="noopener noreferrer" aria-label="Instagram @latun.barber">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2019–2026 Барбершоп Латунь</p>
+        <a href="privacy.html" class="link">Политика конфиденциальности</a>
+      </div>
+      <p class="footer__demo">Демо-проект для портфолио. Бизнес вымышленный.</p>
+    </div>
+  </footer>
+
+  <!-- Кнопка «Наверх» -->
+  <button class="to-top icon-btn" id="toTop" type="button" aria-label="Наверх">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <!-- Лайтбокс -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фото" hidden>
+    <button class="icon-btn lightbox__close" type="button" id="lbClose" aria-label="Закрыть">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button class="icon-btn lightbox__nav lightbox__nav--prev" type="button" id="lbPrev" aria-label="Предыдущее фото">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img id="lbImage" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="icon-btn lightbox__nav lightbox__nav--next" type="button" id="lbNext" aria-label="Следующее фото">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

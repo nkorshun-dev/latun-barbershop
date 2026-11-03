@@ -1,0 +1,26 @@
+# Секреты и окружение
+.env
+.env.*
+
+# Зависимости
+node_modules/
+
+# Служебный кэш инструментов
+.impeccable/hook.cache.json
+
+# Системный мусор
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Редакторы
+.vscode/
+.idea/
+dist
+.netlify
+
+# Служебные файлы (только локально)
+.claude/
+.impeccable/
+PROJECT.md
+0[0-9]-*.md
