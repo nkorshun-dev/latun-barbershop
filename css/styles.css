@@ -997,3 +997,8 @@ svg {
 
 /* Защита картинок: без перетаскивания и без меню «сохранить» при долгом нажатии */
 img { -webkit-user-drag: none; user-select: none; -webkit-touch-callout: none; }
+
+/* Демо: декоративные «ссылки» (соцсети, телефон) */
+.demo-link { cursor: default; }
+.link.demo-link:hover { color: var(--brass-light); }
+.social.demo-link:hover { background: none; border-color: var(--line); color: var(--text); transform: none; }
