@@ -21,12 +21,13 @@
 
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 
+  <link rel="preload" as="image" type="image/avif" href="img/hero-1600.avif" imagesrcset="img/hero-640.avif 640w, img/hero-1024.avif 1024w, img/hero-1600.avif 1600w, img/hero-2400.avif 2400w" imagesizes="(max-aspect-ratio: 3/2) 150vh, 100vw" fetchpriority="high">
   <!-- Шрифты -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://images.unsplash.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <link rel="preload" href="fonts/inter-cyrillic-1e8edb2f.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswald-cyrillic-df048330.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/styles.css">
   <!-- класс .js включает анимации появления только при работающем JS;
        если script.js не загрузился за 3 секунды — убираем класс, чтобы контент не остался невидимым -->
@@ -63,14 +64,10 @@
   <main id="main">
     <!-- ===== Hero ===== -->
     <section class="hero" id="top">
-      <img class="hero__bg"
-           src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1920&q=75&fit=crop"
-           srcset="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=800&q=70&fit=crop 800w,
-                   https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1280&q=70&fit=crop 1280w,
-                   https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1920&q=75&fit=crop 1920w"
-           sizes="100vw"
-           alt="Интерьер барбершопа: кожаные кресла, кирпичные стены, тёплый свет ламп"
-           fetchpriority="high">
+      <picture>
+        <source type="image/avif" srcset="img/hero-640.avif 640w, img/hero-1024.avif 1024w, img/hero-1600.avif 1600w, img/hero-2400.avif 2400w" sizes="(max-aspect-ratio: 3/2) 150vh, 100vw">
+        <img class="hero__bg" src="img/hero-1600.webp" srcset="img/hero-640.webp 640w, img/hero-1024.webp 1024w, img/hero-1600.webp 1600w, img/hero-2400.webp 2400w" sizes="(max-aspect-ratio: 3/2) 150vh, 100vw" alt="Интерьер барбершопа: кожаные кресла, кирпичные стены, тёплый свет ламп" fetchpriority="high" width="2400" height="1600">
+      </picture>
       <div class="container hero__content">
         <h1 class="hero__title">Барбершоп <span>Латунь</span></h1>
         <p class="hero__subtitle">Мужские стрижки и бритьё в центре Минска с 2019 года</p>
@@ -475,18 +472,18 @@
           <dl class="contacts__list">
             <div><dt>Адрес</dt><dd>г. Минск, ул. Революционная, 17, вход со двора</dd></div>
             <div><dt>Часы работы</dt><dd>Пн–Пт 10:00–21:00, Сб–Вс 10:00–20:00</dd></div>
-            <div><dt>Телефон</dt><dd><span class="link contacts__phone demo-link" aria-label="Телефон +375 (29) 318-47-62 (в демо не активно)" title="Демо-проект: ссылка не активна">+375 (29) 318-47-62</span></dd></div>
-            <div><dt>Instagram</dt><dd><span class="link demo-link" aria-label="Instagram @latun.barber (в демо не активно)" title="Демо-проект: ссылка не активна">@latun.barber</span></dd></div>
+            <div><dt>Телефон</dt><dd><span role="img" class="link contacts__phone demo-link" aria-label="Телефон +375 (29) 318-47-62 (в демо не активно)" title="Демо-проект: ссылка не активна">+375 (29) 318-47-62</span></dd></div>
+            <div><dt>Instagram</dt><dd><span role="img" class="link demo-link" aria-label="Instagram @latun.barber (в демо не активно)" title="Демо-проект: ссылка не активна">@latun.barber</span></dd></div>
             <div><dt>Парковка и оплата</dt><dd>Бесплатная парковка во дворе. Карты, Apple/Google Pay, наличные</dd></div>
           </dl>
           <div class="socials">
-            <span class="social demo-link" aria-label="Telegram (в демо не активно)" title="Демо-проект: ссылка не активна">
+            <span role="img" class="social demo-link" aria-label="Telegram (в демо не активно)" title="Демо-проект: ссылка не активна">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-8c.4-.3-.1-.5-.6-.2L6.7 12.8 2 11.4c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg>
             </span>
-            <span class="social demo-link" aria-label="Viber (в демо не активно)" title="Демо-проект: ссылка не активна">
+            <span role="img" class="social demo-link" aria-label="Viber (в демо не активно)" title="Демо-проект: ссылка не активна">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c5 0 8.5 2.4 8.5 8.3 0 5.6-3.6 7.9-8.5 7.9-.8 0-1.6 0-2.3-.2L6 21v-3.4c-1.8-1.3-2.5-3.7-2.5-6.8C3.5 4.9 7 2.5 12 2.5z"/><path d="M9 8c.5 2.8 2.2 5 5.5 6.5M13 6.5a4 4 0 0 1 4 4M13 9a1.6 1.6 0 0 1 1.5 1.5"/></svg>
             </span>
-            <span class="social demo-link" aria-label="Instagram (в демо не активно)" title="Демо-проект: ссылка не активна">
+            <span role="img" class="social demo-link" aria-label="Instagram (в демо не активно)" title="Демо-проект: ссылка не активна">
               <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
             </span>
           </div>
@@ -514,13 +511,13 @@
         </ul>
       </nav>
       <div class="socials socials--sm">
-        <span class="social demo-link" aria-label="Telegram (в демо не активно)" title="Демо-проект: ссылка не активна">
+        <span role="img" class="social demo-link" aria-label="Telegram (в демо не активно)" title="Демо-проект: ссылка не активна">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" stroke="none" d="M21.9 4.3 18.8 19c-.2 1-.9 1.3-1.7.8l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.3-4.8 8.8-8c.4-.3-.1-.5-.6-.2L6.7 12.8 2 11.4c-1-.3-1-1 .2-1.5L20.6 3c.9-.3 1.6.2 1.3 1.3z"/></svg>
         </span>
-        <span class="social demo-link" aria-label="Viber (в демо не активно)" title="Демо-проект: ссылка не активна">
+        <span role="img" class="social demo-link" aria-label="Viber (в демо не активно)" title="Демо-проект: ссылка не активна">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5c5 0 8.5 2.4 8.5 8.3 0 5.6-3.6 7.9-8.5 7.9-.8 0-1.6 0-2.3-.2L6 21v-3.4c-1.8-1.3-2.5-3.7-2.5-6.8C3.5 4.9 7 2.5 12 2.5z"/><path d="M9 8c.5 2.8 2.2 5 5.5 6.5M13 6.5a4 4 0 0 1 4 4M13 9a1.6 1.6 0 0 1 1.5 1.5"/></svg>
         </span>
-        <span class="social demo-link" aria-label="Instagram (в демо не активно)" title="Демо-проект: ссылка не активна">
+        <span role="img" class="social demo-link" aria-label="Instagram (в демо не активно)" title="Демо-проект: ссылка не активна">
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
         </span>
       </div>

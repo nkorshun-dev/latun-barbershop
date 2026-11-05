@@ -442,7 +442,7 @@ svg {
   border-color: var(--brass);
   color: var(--on-brass);
 }
-.service--cta .service__desc { color: rgba(18, 18, 18, 0.8); }
+.service--cta .service__desc { color: #252017; }
 .service--cta:hover { background: var(--brass-light); border-color: var(--brass-light); }
 .service__link {
   margin-top: var(--space-3);

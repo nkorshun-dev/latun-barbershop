@@ -52,3 +52,6 @@ npx serve .
 ```
 
 Для фото, шрифтов и карты нужен интернет.
+
+<!-- QA 2026-11-05 -->
+QA 05.11.2026: local fonts in fonts/ + css/fonts.css (Inter/Oswald, Latin/Cyrillic, swap/preload, OFL licenses); original Unsplash hero photo-1585747860715-2ba37e788b70 stored as img/hero-{640,1024,1600,2400}.{avif,webp}, responsive picture/preload. Noninteractive contacts have role=img; CTA description contrast >4.6.
